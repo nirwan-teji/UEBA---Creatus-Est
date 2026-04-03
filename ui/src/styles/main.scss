@@ -1,0 +1,69 @@
+:root {
+  font-size: 16px;
+  --ueba-bg: #f6f8f5;
+  --ueba-surface: #ffffff;
+  --ueba-text: #0b0f0c;
+  --ueba-accent: #064420;
+  --ueba-accent-light: #0b6e4f;
+  --ueba-border: #c8d5c0;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: var(--ueba-bg);
+  color: var(--ueba-text);
+}
+
+#root {
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgba(11, 17, 12, 0.05), rgba(6, 68, 32, 0.06));
+}
+
+.ueba-mode-badge {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  background-color: rgba(6, 68, 32, 0.12);
+  color: var(--ueba-accent);
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.stat-card {
+  background: var(--ueba-surface);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 16px 32px rgba(6, 68, 32, 0.08);
+  border: 1px solid var(--ueba-border);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 22px 40px rgba(6, 68, 32, 0.12);
+  }
+}
+
+.ueba-mode-toggle {
+  background-color: rgba(227, 237, 230, 0.65) !important;
+  border-radius: 999px !important;
+  padding: 4px !important;
+
+  .ant-segmented-item {
+    color: #064420 !important;
+    font-weight: 600;
+  }
+
+  .ant-segmented-item-selected {
+    background-color: #064420 !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 0 1px #042710 inset;
+  }
+}
+
+.timeline-event {
+  border-left: 2px solid rgba(6, 68, 32, 0.35);
+  padding-left: 12px;
+  margin-left: 8px;
+  margin-bottom: 12px;
+}
